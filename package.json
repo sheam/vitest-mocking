@@ -1,0 +1,23 @@
+{
+  "name": "testing-vite-mocks",
+  "version": "6.4.5",
+  "description": "Vitest Mocks Issue",
+  "scripts": {
+    "test:all": "vitest run --silent --watch=false"
+  },
+  "dependencies": {
+    "react": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.23",
+    "@types/react-dom": "18.3.1",
+    "@vitejs/plugin-react": "^4.7.0",
+    "typescript": "^4.9.5",
+    "vite": "^7.0.6",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "^3.2.4"
+  },
+  "author": "Test",
+  "license ": "private",
+  "private": true
+}

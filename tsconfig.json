@@ -1,0 +1,112 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "noImplicitAny": true,
+    "baseUrl": "./src",
+    
+    "paths": {
+      "@components/*": [
+        "components/*"
+      ],
+      "@data/*": [
+        "data/*"
+      ],
+      "@enums/*": [
+        "enums/*"
+      ],
+      "@hooks/*": [
+        "hooks/*"
+      ],
+      "@pages/*": [
+        "pages/*"
+      ],
+      "@providers/*": [
+        "providers/*"
+      ],
+      "@shared/*": [
+        "shared/*"
+      ],
+      "@typings/*": [
+        "typings/*"
+      ],
+      "@util/*": [
+        "util/*"
+      ],
+      "@ui/*": [
+        "ui/*"
+      ],
+      "@styles/*": [
+        "styles/*"
+      ],
+      "@messages/*": [
+        "messages/*"
+      ],
+      "@routes/*": [
+        "routes/*"
+      ],
+      "@urls/*": [
+        "urls/*"
+      ]
+    },
+    "target": "ES2022",
+    "module": "ES2022",
+    "jsx": "react-jsx",
+    "plugins": [
+      {
+        "name": "typescript-strict-plugin",
+        "exclude": [
+          "./src/data/endpoints"
+        ]
+      }
+    ],
+    "sourceMap": true,
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": false,
+    // Leaving the value from the TSConfig breaks the build.
+    "strict": false,
+    // Leaving the value from the TSConfig breaks the build.
+    "outDir": "../tmp/tsc",
+    "typeRoots": [
+      "src/typings",
+      "node_modules/@types"
+    ],
+    "types": [
+      "vitest/globals"
+    ],
+    // needed for mobx 6
+    "useDefineForClassFields": true
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.spec.ts",
+    "scaffolding",
+    "config",
+    "vite.config.ts",
+    "rollup.config.js",
+    "setupTests.d.ts",
+    "reportWebVitals.d.ts"
+  ],
+  "awesomeTypescriptLoaderOptions": {
+    "useCache": true,
+    "forceIsolatedModulesx": true
+  }
+}
